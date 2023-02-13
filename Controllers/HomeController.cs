@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using test_demo_api.Models;
 
 namespace test_demo_api.Controllers
 {
@@ -44,7 +45,12 @@ namespace test_demo_api.Controllers
             return Content("Testing the content.");
         }
 
-        
-
+        [Route("[action]")]
+        [HttpGet]
+        public ObjectResult GetUserObject()
+        {
+            var user = new User { ID = 1, Name = "Test" };
+            return new ObjectResult(user);
+        }
+     }
     }
-}
