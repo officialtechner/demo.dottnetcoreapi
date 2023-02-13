@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Xml.Linq;
 using test_demo_api.Models;
 
 namespace test_demo_api.Controllers
@@ -52,5 +53,23 @@ namespace test_demo_api.Controllers
             var user = new User { ID = 1, Name = "Test" };
             return new ObjectResult(user);
         }
-     }
+
+        [Route("[action]")]
+        [HttpGet]
+        public ViewResult GetUserView()
+        {
+            return new ViewResult();
+        }
+
+        [Route("[action]")]
+        [HttpGet]
+        public ViewResult GetUserPassingData()
+        {
+            //@todo
+            var user = new User { ID = 1, Name = "Test" };
+
+            return new ViewResult();
+        }
+
+    }
     }
