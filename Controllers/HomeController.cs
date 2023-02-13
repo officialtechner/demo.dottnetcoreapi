@@ -37,5 +37,14 @@ namespace test_demo_api.Controllers
             return "tsssss - Home - Test";
         }
 
+        [Route("[action]")]
+        [HttpGet]
+        public ContentResult GetUserText()
+        {
+            return Content("Testing the content.");
+        }
+
+        
+
     }
 }
