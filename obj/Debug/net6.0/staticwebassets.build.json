@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "xO+dfDskmpYgzvh9cBgbO7KsNrDiL76EycztZf0pNZY=",
+  "Source": "test_demo_api",
+  "BasePath": "_content/test_demo_api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "test_demo_api\\wwwroot",
+      "Source": "test_demo_api",
+      "ContentRoot": "C:\\Users\\Desktop0\\source\\repos\\test_demo_api\\test_demo_api\\wwwroot\\",
+      "BasePath": "_content/test_demo_api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Desktop0\\source\\repos\\test_demo_api\\test_demo_api\\wwwroot\\hello.txt",
+      "SourceId": "test_demo_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Desktop0\\source\\repos\\test_demo_api\\test_demo_api\\wwwroot\\",
+      "BasePath": "_content/test_demo_api",
+      "RelativePath": "hello.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\hello.txt"
+    }
+  ]
+}
